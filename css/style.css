@@ -42,7 +42,6 @@ a:foucs {
 /* 头部内容 */
 #header-wrapper{
     /* 设置背景渐变 */
-    
     height: 600px; /*auto changed*/
     position: relative;
 }
@@ -63,10 +62,12 @@ a:foucs {
 
 
 #header-container{
+    z-index: 1;
     position: absolute;
     top: 0px;
     width: 100%;
-    padding: 80px 10px 0 10px;
+    margin-top: 80px;
+    padding: 0 10px 0 10px;
 }
 
 #symbol {
@@ -146,6 +147,7 @@ a:foucs {
 
 /*内容区域的样式*/
 #content-wrapper {
+    z-index: 0;
     position: relative;
     padding: 20px 40px 20px 0px;
     top: -40px;  /* auto changed */
@@ -449,6 +451,51 @@ a:foucs {
 .menu-drop>li>ul>li:hover a {
     background-color: greenyellow;
     transition: all .5s ease-out;
+}
+
+/* 新闻内容 */
+.news-page {
+    padding: 0 20px;
+}
+
+.news-page>h2 {
+    font-weight: bold;
+}
+
+.news-page .news-meta>.meta-marked {
+    font-weight: bold;
+    
+}
+
+.news-page>.news-content {
+    margin: 20px 10px 0 10px;
+}
+
+.news-page>.news-content>p{
+    line-height: 1.8em;
+    text-indent: 2em;
+}
+
+.news-page img {
+    width: 100%;
+    padding: 10px 20px 5px 20px;
+}
+
+.news-page .news-img-mark {
+    color: white;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.news-page mark {
+    background-color: yellow;
+    border-radius: 2px;
+    margin: 0 5px;
+}
+
+span.em-underline {
+    border: tomato solid 1px;
 }
 
 /*搜索框*/
