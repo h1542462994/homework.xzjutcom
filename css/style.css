@@ -494,10 +494,6 @@ a:foucs {
     margin: 0 5px;
 }
 
-span.em-underline {
-    border: tomato solid 1px;
-}
-
 /*搜索框*/
 .search-box {
     border: white 1px solid;
