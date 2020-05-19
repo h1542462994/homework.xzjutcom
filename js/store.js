@@ -24,7 +24,8 @@ var elements = {
     aside_wrapper: HTMLElement,
     content_wrapper : HTMLElement,
     news_box_items : HTMLCollection,
-    wrap_hiddens : HTMLCollection
+    wrap_hiddens : HTMLCollection,
+    main_content_wrapper: HTMLElement,
 }
 
 window.addEventListener('load', store_test)
@@ -47,6 +48,7 @@ function init_store() {
     elements.content_wrapper = document.getElementById('content-wrapper')
     elements.news_box_items = document.getElementsByClassName('news-box-item')
     elements.wrap_hiddens = document.getElementsByClassName('wrap-hidden')
+    elements.main_content_wrapper = document.getElementById('main-content-wrapper');
 }
 
 function store_test(){

@@ -6,7 +6,7 @@ function justify_content_wrapper(){
     if (document.body.offsetWidth >= 960){ // 不存在换行的情况
         elements.aside_wrapper.style.flexGrow = 0
         elements.content_wrapper.style.top = -40
-        elements.content_wrapper.style.width = 600       
+        //elements.main_content_wrapper.style.width = 600       
         for (let index = 0; index < elements.news_box_items.length; index++) {
             const element = elements.news_box_items[index]
             element.style.width = 0
@@ -21,7 +21,7 @@ function justify_content_wrapper(){
     } else {
         elements.aside_wrapper.style.flexGrow = 1
         elements.content_wrapper.style.top = 0
-        elements.content_wrapper.style.width = 400
+        //elements.main_content_wrapper.style.width = 400
         for (let index = 0; index < elements.news_box_items.length; index++) {
             const element = elements.news_box_items[index]
             element.style.width = '100%'

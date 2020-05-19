@@ -6,6 +6,7 @@
 }
 
 #content-wrapper {
+    z-index: -1;
     background-color: violet;
     display: flex;
     flex-wrap: wrap;
@@ -52,4 +53,21 @@
     width: 240px;
     flex-grow: 0;
     background-color: yellow;
+}
+
+.float-demo {
+    margin: -40px 40px 0 40px;
+    background-color: thistle;
+    padding: 20px;
+}
+
+.float-demo>img {
+    margin-right: 20px;
+    float: left;
+    width: 120px;
+}
+
+.position-demo {
+    height: 120px;
+    background-color: turquoise;
 }

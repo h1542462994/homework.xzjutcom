@@ -333,6 +333,7 @@ a:foucs {
 
 .section-content-block p {
     width: 100%;
+    white-space: unset;
 }
 
 .wrap-aside {
