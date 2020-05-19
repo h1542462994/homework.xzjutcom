@@ -1,0 +1,482 @@
+/* 全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6em;
+}
+
+p {
+    margin: 0px 0px 4px 0px;
+}
+
+body{
+    background: whitesmoke;
+}
+
+/* -- 清除链接默认样式 */
+a {
+    display: block;
+    color: white;
+    text-decoration: none !important;
+}
+
+a:hover {
+    color: white;
+}
+
+a:visited{
+    color: white;
+}
+
+a:foucs {
+    color: white;
+}
+
+
+.flex-box-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/* 头部内容 */
+#header-wrapper{
+    /* 设置背景渐变 */
+    
+    height: 600px; /*auto changed*/
+    position: relative;
+}
+
+#header-wrapper-news {
+    height: 300px;
+    position: relative;
+    background-color: darkgreen;
+}
+
+#background-blur {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(black 10%, transparent, transparent);
+    opacity: 0.8;
+}
+
+
+#header-container{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    padding: 80px 10px 0 10px;
+}
+
+#symbol {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+
+.img-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#background-title {
+    position: absolute;
+    z-index: 1;
+    bottom: 100px;
+    left: 100px;
+    font-weight: bold;
+    font-size: 2.5em;
+}
+
+.title-link:hover {
+    color: yellow;
+}
+
+.left-align {
+    margin: 0 0 0 40px;
+}
+
+#background-counter {
+    position: absolute;
+    z-index: 1;
+    color:white;
+    bottom: 40px;
+    right: 40px;
+}
+
+.background-block {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    width: 300px;
+    height: 60px;
+}
+
+#counter-block {
+    position: relative;
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    left: 0px;
+    background-color: violet;
+}
+
+#background-counter>div {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    border: white 1px solid;
+    text-align: center;
+    z-index: 2;
+}
+
+#background-counter>div.selected {
+    background-color: violet;
+
+}
+
+#img-2 {
+    opacity: 0;
+}
+
+/*内容区域的样式*/
+#content-wrapper {
+    position: relative;
+    padding: 20px 40px 20px 0px;
+    top: -40px;  /* auto changed */
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-color: tan;
+}
+
+#main-content-wrapper {
+    width: 600px;
+    flex-grow: 1;
+}
+
+#aside-wrapper {
+    width: 240px;
+    flex-grow: 1; /* auto changed */
+}
+
+.section-header h2 {
+    width: auto;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.section-header h2>b {
+    display: inline-block;
+    width: 40px;
+    height: 2px;
+    vertical-align: middle;
+    margin: 0 20px;
+    background: black;
+    opacity: 0.5;
+}
+
+#new-wrapper .section-header>a {
+    margin-left: 20px;
+}
+
+.section-header>a {
+    display: inline-block;
+    color: black;
+}
+
+.section-header>a:hover {
+    color: olive;
+}
+
+.news-wrapper{
+    padding: 0 20px;
+}
+
+.news-wrapper>:not(:first-child) {
+    border-top: white 2px dotted;
+}
+
+.news-item {
+    display: flex;
+    padding: 10px 20px;
+    flex-wrap: nowrap;
+}
+
+.news-item h3 {
+    margin-top: 0px;
+}
+
+.news-item h3 > a {
+    color: black;
+}
+
+.news-item h3 >a:hover {
+    color: olive
+}
+
+.news-item>.news-item-date{
+    margin-top: 12px;
+    width: 100px;
+    flex-grow: 0;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.news-item>.news-item-date :first-child {
+    font-size: 2em;
+    line-height: 1em;
+    color: dodgerblue;
+    display: block;
+}
+
+.news-item>.news-item-content {
+    width: 0px;
+    flex-grow: 1;
+}
+
+.section-content {
+    margin: 10px;
+}
+
+.section-content>div:hover{
+    color: gray;
+}
+
+.section-content>div:hover >h3{
+    color: olivedrab;
+}
+
+
+#news-wrapper .section-content>div + div {
+    border-top: cadetblue 1px solid;
+    margin: 10px 0;
+}
+
+
+.news>div>.date {
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 2.5em;
+}
+
+.news>div>.date>span {
+    font-size: 0.4em;
+}
+
+.news-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+/* news-box */
+
+.news-box-item {
+    margin: 10px;
+    padding: 10px;
+    width: 0px;
+    flex-grow: 1;
+    background-color: white;
+}
+
+.news-box-item img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.news-box-item a {
+    color: black;
+}
+
+.news-box-item h3 {
+    font-size: 1.2em;
+}
+
+.news-box-item:hover a {
+    color: olive;
+} 
+
+.section-content-img>div {
+    background-color: rgba(255, 255, 255, 0.4);
+    margin: 5px 0px;
+    padding: 10px 10px 0 10px;
+}
+
+.section-content>div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-content img {
+    width: 100%;
+}
+
+.section-content p {
+    overflow: hidden;
+    width: 0px;
+    flex-grow: 1;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-right: 8px;
+}
+
+.section-content-block p {
+    width: 100%;
+}
+
+.wrap-aside {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wrap-aside > div {
+    width: 200;
+    flex-grow: 1;
+}
+
+/*页脚的样式*/
+#footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    color:white;
+    background: black;
+    padding: 40px 60px;
+}
+
+#footer-wrapper>img {
+    width: 200px;
+}
+
+#footer-wrapper>div img {
+    width: 16px;
+}
+
+#footer-wrapper span {
+    font-weight: bold;
+}
+
+/*菜单栏样式*/
+.menu ul, li {
+    list-style-type: none;
+    color: white;
+}
+
+.menu>li {
+    display: inline-block; /*按行排列*/
+    vertical-align: top; /*顶部对齐*/
+    width: 100px;
+    text-align: center;
+    font-size: 1.0em;
+}
+
+.menu-small >li {
+    font-size: 0.8em;
+    width: 60px;
+}
+
+/* 一级菜单样式 */
+.menu>li>a {
+    padding: 8px 0;
+}
+
+.menu-dark {
+    margin: 0px 5px;
+    padding-top: 12px;
+    color: white;
+    background-color: darkslategray;
+}
+
+.menu-dark > :not(.selected):hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.menu-dark > .selected{
+    background-color: white;
+}
+
+.menu-dark > .selected > a {
+    color: black;
+}
+
+.menu-nodrop>li:hover >a {
+    color: orange;
+}
+
+/* 一级菜单样式 - drop */
+.menu-drop>li>a {
+    border-top: transparent 2px solid; /*预留顶部边框*/
+    transition:all .5s ease-in;
+}
+
+.menu-drop>li:hover >a {
+    border-top: orange 2px solid;
+    background-color: white;
+    color:olive;
+    transition:all .5s ease-out;
+}
+
+
+.menu-drop>li>ul {
+    display: none;
+    background-color: white;
+    width: 140px;
+    text-align: left;
+    padding: 6px 0;
+    transition:all .5s ease-in;
+}
+
+.menu-drop>li:hover >ul {
+    display: block;
+}
+
+/* 二级菜单样式 */
+.menu-drop>li>ul>li a{
+    padding: 4px 0 4px 18px;
+    color: olivedrab
+}
+
+.menu-drop>li>ul>li:hover a {
+    background-color: greenyellow;
+    transition: all .5s ease-out;
+}
+
+/*搜索框*/
+.search-box {
+    border: white 1px solid;
+    border-radius: 10px;
+    width: auto;
+    height: 24px;
+    margin: 5px;
+}
+
+.search-box >input[type="text"] {
+    border-style: none;
+    background: transparent;
+    outline: none;
+    text-indent: 10px;
+    color: white;
+    font-size: 0.8em;
+    vertical-align: top;
+}
+
+.search-box >input[type="text"]::-webkit-input-placeholder{
+    color: lightcyan;
+}
+
+
+.search-box .icon {
+    vertical-align: top;
+    color: white;
+    margin: 3px 8px 0 0;
+}
